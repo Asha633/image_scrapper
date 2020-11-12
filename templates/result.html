@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scrapped Images</title>
+</head>
+<body>
+
+<div class="table-users">
+    <div class="header"><h1>scrapped images are :</h1></div>
+    <table>
+        {% for user_image in images %}
+
+
+        <td width="400">
+            <img width="200" height="200" src='static/images/{{user_image}}' alt="User Image"></td>
+
+        {%endfor%}
+    </table>
+</div>
+
+</body>
+</html>
